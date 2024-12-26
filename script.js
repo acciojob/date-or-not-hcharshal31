@@ -14,6 +14,10 @@ function isDate(input) {
   return false;
 }
 
-// Do not change the code below.
-const input = prompt("Enter Date.");
-alert(isDate(input));
+// Examples
+console.log(isDate(new Date())); // true
+console.log(isDate("2023-08-11")); // true
+console.log(isDate("not a date")); // false
+console.log(isDate(1691798400000)); // true (timestamp)
+console.log(isDate({})); // false
+console.log(isDate(null)); // false

@@ -1,10 +1,6 @@
 var isDate = function (input) {
   const regex = /^\d{4}\/(0[1-9]|1[0-2])\/(0[1-9]|[1-2]\d|3[0-1])$/;
-	if(input.match(regex)){
-		return true;
-	} else{
-		return false;
-	}
+  return regex.test(input); // Directly return the result of the regex test
 };
 
 // Do not change the code below.
